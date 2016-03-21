@@ -1,22 +1,20 @@
-#include<bmi.h>
+#include "bmi.h"
 #include<iostream>
-using namespace std;
-using namespace bmi;
 
-void bmi(double hei, int wei)
+bmi::bmi(double hei, int wei)
 {
 	BMI = 0;
 	height = hei/100;
 	weight = wei;
 }
 
-double getBMI()
+double bmi::getBMI()
 {
 	BMI = weight/(height*height);
 	return BMI;
 }
 
-string getCate()
+string bmi::getCate()
 {
 	if(BMI<15)
 		return "Very severely underweight";

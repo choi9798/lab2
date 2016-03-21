@@ -1,11 +1,11 @@
-main: BMI.o main.o
-	g++ -o main main.o BMI.o
+main: bmi.o main.o
+	g++ -o main main.o bmi.o
 
-BMI.o: BMI.cpp BMI.h
-	g++ -c BMI.cpp
+BMI.o: bmi.cpp BMI.h
+	g++ -c bmi.cpp
 
-main.o: main.cpp BMI.h
+main.o: main.cpp bmi.h
 	g++ -c main.cpp
 
 clean:
-	rm BMI *.o
+	rm bmi *.o
