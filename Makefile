@@ -8,4 +8,4 @@ main.o: main.cpp bmi.h
 	g++ -c main.cpp
 
 clean:
-	rm bmi *.o
+	rm *.o
